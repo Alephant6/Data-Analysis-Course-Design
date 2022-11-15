@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Mirror the Github organization repos to Gitee.
-      uses: alephant6/gitee-mirror-action@v0.01
+      uses: Yikun/gitee-mirror-action@v0.01
       with:
         # 必选，需要同步的Github用户（源）
         src: github/alephant6
