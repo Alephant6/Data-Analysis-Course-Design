@@ -19,12 +19,12 @@ variablenames = T.Properties.VariableNames;
 
 
 %% C1.2.1 plotmatrix
-for num = 2:5
+for i = 2:5
     figure
-    variablename = variablenames{num};
+    variablename = variablenames{i};
     figname1 = ['C1.2.1-', variablename];
 
-    plotmatrix(table2array(T(:,num)));
+    plotmatrix(table2array(T(:,i)));
     title(figname1)
 
     saveas(gcf, [figpath, figname1, figtype]) 
@@ -32,12 +32,12 @@ end
 
 
 %% C1.2.2 boxplot
-for num = 2:5
+for i = 2:5
     figure
-    variablename = variablenames{num};
+    variablename = variablenames{i};
     figname2 = ['C1.2.2-', variablename];
 
-    boxplot(table2array(T(:,num)));
+    boxplot(table2array(T(:,i)));
     title(figname2)
 
     saveas(gcf, [figpath, figname2, figtype]) 

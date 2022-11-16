@@ -19,11 +19,11 @@ figtype = '.png';
 
 
 %% run
-for num = 1:8
+for i = 1:8
     % define paramaters
-    figure(num)
-    Sigma = cell2mat(Sigmas(num));
-    figname = ['C1.1.', num2str(num)];
+    figure(i)
+    Sigma = cell2mat(Sigmas(i));
+    figname = ['C1.1.', num2str(i)];
     
     % calculate 
     X = mvnrnd(mu, Sigma, n);
