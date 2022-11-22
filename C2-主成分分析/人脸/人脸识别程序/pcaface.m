@@ -12,7 +12,7 @@ for i = 1 : count
     temp=reshape(M,[200*180 1]);
     K(:,i)=double(temp);%把所有训练图像读到K
 end
-[e,m,lambda] = cvPca(K,3);%对K做主成分分析，取3个主成分
+[e,m,lambda] = cvpca(K,3);%对K做主成分分析，取3个主成分
 
 for n=1:20
     for i=1:3 %利用3个主成分

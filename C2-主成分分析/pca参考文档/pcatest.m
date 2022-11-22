@@ -5,10 +5,10 @@ load cities;
 % first5 = names(1:5,:)
 boxplot(ratings,'orientation','horizontal','labels',categories)
     
- stdr = std(ratings);
+stdr = std(ratings);
 sr = ratings./repmat(stdr,329,1);%%%对数据进行规范化,其实是对相关系数矩阵进行主成分分析
 
-[coefs,scores,variances,t2] = princomp(sr);%%%对数据进行主成分分析
+[coefs,scores,variances,t2] = pca(sr);%%%对数据进行主成分分析
 
 c3 = coefs(:,1:3) %%%主成分分析的前面三个主成分系数
 
