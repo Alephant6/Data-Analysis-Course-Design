@@ -1,6 +1,6 @@
 %% C1.3 Sample Classification
 % Author: Alephant
-% Date: 16 Nov 2022
+% Date: 22 Nov 2022
 clc;
 close all;
 clear;
@@ -22,4 +22,5 @@ sample = [16.6,28.08,108.3,858.1,0.08455;
 20.6,29.33,140.1,1265,0.1178;
 7.76,24.54,47.92,181,0.05263];
 
-%% 
+%% distance
+distances = dist(sample, rawdata');
