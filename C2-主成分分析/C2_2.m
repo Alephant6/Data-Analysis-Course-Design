@@ -83,6 +83,7 @@ for i = 1:test_file_num
     saveas(gcf, [figpath, figname_result, figtype]) 
 end
 
+
 %% Classification basis
 fprintf("选前%d个最大的特征值\n",components_num)
 disp("10个测试文件，20个训练文件")
