@@ -84,6 +84,7 @@ for i = 1:test_file_num
 end
 
 %% Classification basis
+fprintf("选前%d个最大的特征值\n",components_num)
 disp("10个测试文件，20个训练文件")
 disp("分类依据：")
 disp("1. 训练文件在特征空间的投影：")
