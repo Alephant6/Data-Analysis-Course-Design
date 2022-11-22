@@ -22,7 +22,7 @@ for i= 1 : train_files_num
     train_data(:,i)=double(train_file_image_gray(:));
 end
 % pca, the number of components
-components_num = 3;
+components_num = 4;
 [eigenvectors,m,lambda] = cvpca(train_data,components_num);
 
 feature_space_coordinates = zeros([components_num train_files_num], 'double');
