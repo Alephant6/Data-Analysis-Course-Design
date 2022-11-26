@@ -59,7 +59,7 @@ xlabel('第一主成分：食品');
 ylabel('第二主成分：衣着');
 % label the names of the regions
 % gname(names);
-saveas(gcf, [figpath, 'C2.1.3', figtype]) 
+% saveas(gcf, [figpath, 'C2.1.3', figtype]) 
 
 
 
