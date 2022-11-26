@@ -68,7 +68,7 @@ for i = 1:3
 end
 
 result_unequal = 2 * ones(3,1);
-result_unequal((W1-W2)>=0) = 1;
+result_unequal((d2_square-d1_square)>=0) = 1;
 disp("协方差矩阵不同时，样本分类结果：")
 disp("（1=良性肿瘤，2=恶性肿瘤）")
 disp(result_unequal)
